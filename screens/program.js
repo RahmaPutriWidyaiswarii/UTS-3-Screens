@@ -22,36 +22,35 @@ const Program= () => {
         marginHorizontal={15}
         marginTop={10}
         marginBottom={1}        
-      > 
-      
-      <HStack space={5}>
-        <Box width="40%">
-          <Image
-            source={{ uri: item.image }}
-            width= '100%'
-            h= {100}       
-            resizeMode='cover' 
-            borderRadius={15}
-            alt="Image Data"
-          />
+      >
+        <HStack space={5}>
+          <Box width="40%">
+            <Image
+              source={{ uri: item.image }}
+              width= '100%'
+              h= {100}      
+              resizeMode='cover'
+              borderRadius={15}
+              alt="Image Data"
+            />
           </Box>
-
+          
           <Box width="60%" alignItems={"center"} justifyContent={"center"}>
             <Text fontSize={16}>
               {item.title}
             </Text>
           </Box>
-      </HStack>
+        </HStack>
       </Box>
     </TouchableOpacity>
     );
   };
-  
+
   return (
   <>
   <SafeAreaView>
     <Box alignItems="center">
-      <Button marginTop={"5"} marginBottom={"5"} backgroundColor='#FF003D' width={"252"} height={"60"} fontWeight={"extraBlack"} size={"lg"} borderRadius={10} >
+      <Button marginTop={"5"} marginBottom={"5"} backgroundColor='#FF003D' width={"252"} height={"60"} fontWeight={"extraBlack"} size={"lg"} borderRadius={10}>
         <Text color='white' fontSize={18}>Program MahasiswaKu</Text>
       </Button>
     </Box>
@@ -65,5 +64,6 @@ const Program= () => {
   </>
   );
 };
+
 
 export default Program;
